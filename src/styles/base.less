@@ -1,0 +1,249 @@
+html {
+  font-size: 13.33333vw;
+}
+@media screen and (max-width: 320px) {
+  html {
+      font-size: 42.667px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width:360px) {
+  html {
+      font-size: 48px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width:374px) {
+  html {
+      font-size: 50px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width:393px) {
+  html {
+      font-size: 52.4px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 394px) and (max-width:412px) {
+  html {
+      font-size: 54.93px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width:414px) {
+  html {
+      font-size: 55.2Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width:480px) {
+  html {
+      font-size: 64Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width:540px) {
+  html {
+      font-size: 72Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width:640px) {
+  html {
+      font-size: 85.33Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width:720px) {
+  html {
+      font-size: 96Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width:768px) {
+  html {
+      font-size: 102.4Px;
+      font-size: 13.33333vw
+  }
+}
+
+@media screen and (min-width: 769px) {
+  html {
+      font-size: 50Px;
+  }
+  .wrap{
+      width: 750Px!important;
+      margin: 0 auto;
+  }
+}
+// *{
+//   touch-action: pan-y; // 解决点击事件报[Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive.问题
+// }
+#app {
+  font-family: PingFangSC, PingFang SC-Medium, 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #666;
+  margin: 0 auto;
+  height: 100%;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body,form,h1,h2,h3,h4,html,ol,p,ul {
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+html, body, .wrap{
+  height: 100vh; // 100%在iOS中不是全屏
+}
+body {
+  width: 100%;
+  font-family: Helvetica,arial;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+
+}
+li,ol,ul {
+  list-style: none;
+  display: block
+}
+
+a {
+  text-decoration: none;
+  outline: 0
+}
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+a img {
+  border: 0
+}
+input, textarea {
+  -webkit-appearance: none;
+  outline: 0
+}
+
+input::-webkit-input-placeholder {
+  color: #999
+}
+
+input::-moz-placeholder {
+  color: #999
+}
+
+button,input:not([type]),input[type=button],input[type=search],input[type=text] {
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+.mobilelogin{
+  // 对话框取消按钮背景色
+ .van-dialog__cancel{
+  background-color: #EEEEEE;
+  // .van-button__text{
+  //   font-family: PingFangSC-Medium;
+  //   font-weight: 500;
+  //   font-size: 0.32rem;
+  //   color: @black;
+  // }
+}
+// .van-button__text{
+//   color:@black;
+// }
+}
+.van-hairline--bottom::after{
+  border:none
+}
+.select {
+  .van-nav-bar__left {
+      padding: 0 ;
+  }
+}
+.van-nav-bar__left {
+    .van-nav-bar__text{
+      color: #666 !important;
+    }
+}
+.van-nav-bar__right{
+ 
+  
+    .van-nav-bar__text{
+      color: #666 !important;
+    
+    }
+  
+}
+
+.van-tabbar--fixed {
+  z-index: 1999 !important;
+}
+.van-popover__action{
+  width:1.4rem !important;
+  font-size:0.28rem;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**单行省略**/
+.single-omit{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/**多行省略**/
+.two-omit{
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  white-space: normal ;
+  word-break: break-all;
+  display: -webkit-box !important;
+  line-clamp: 2;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+}
+/deep/ .van-nav-bar{
+  z-index: 200;
+}
+
+/deep/ .van-nav-bar__title{
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #333;
+}
+/deep/ .van-nav-bar .van-icon{
+  color: #666666;
+  font-size: 0.4rem;
+}
+/**别删了**/
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.HotRank-price > span {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
